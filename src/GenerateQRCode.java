@@ -1,4 +1,4 @@
-package com.journaldev.qrcode.generator;
+
 
 import com.google.zxing.common.BarcodeFormat;
 import com.google.zxing.common.EncodeHintType;
@@ -22,13 +22,14 @@ public class GenerateQRCode {
 	 * @throws IOException
 	 */
 	public static void main(String[] args) throws WriterException, IOException {
-		String qrCodeText = "https://www.journaldev.com";
-		String filePath = "C:\\Users\\Saloni\\Downloads\\JD.png";
+		String qrCodeText = "Hello";
+		String filePath = "JD.png";
 		int size = 125;
 		String fileType = "png";
 		File qrFile = new File(filePath);
 		createQRImage(qrFile, qrCodeText, size, fileType);
 		System.out.println("DONE");
+		
 	}
 
 	private static void createQRImage(File qrFile, String qrCodeText, int size,
