@@ -29,7 +29,7 @@ public class GenerateQRCode {
 		File qrFile = new File(filePath);
 		createQRImage(qrFile, qrCodeText, size, fileType);
 		System.out.println("DONE");
-		
+
 	}
 
 	private static void createQRImage(File qrFile, String qrCodeText, int size,
